@@ -4,8 +4,16 @@
 
 ## Instructions
 
+Grab this set of dotfiles and run it for the first time.
+
 ```bash
 git clone https://github.com/matthewmcvickar/dotfiles.git && cd dotfiles && ./bootstrap.sh
+```
+
+When updating dotfiles thereafter, run:
+
+```bash
+p; cd dotfiles; ./bootstrap.sh
 ```
 
 ## Dotfiles

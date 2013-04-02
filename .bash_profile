@@ -41,5 +41,5 @@ which grunt > /dev/null && eval "$(grunt --completion=bash)"
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
-# Z (https://github.com/rupa/z)
+# Initialize Z (https://github.com/rupa/z)
 . ~/code/z/z.sh

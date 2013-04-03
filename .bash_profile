@@ -43,3 +43,6 @@ which grunt > /dev/null && eval "$(grunt --completion=bash)"
 
 # Initialize Z (https://github.com/rupa/z)
 . ~/code/z/z.sh
+
+# Initialize rbenv (https://github.com/sstephenson/rbenv/)
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

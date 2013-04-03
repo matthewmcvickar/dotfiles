@@ -65,7 +65,7 @@ function usernamehost() {
 # Get the current phase of the moon for use as prompt
 # Adapted from: http://wan.pengganas.net/entry/calculating-phase-of-moon-in-ruby
 function moonphase() {
-	/usr/bin/env ruby <<-EORUBY
+/usr/bin/env ruby <<-EORUBY
 		# Convert a date to Julian.
 		def julian(year, month, day)
 		  a = (14-month)/12
@@ -79,14 +79,14 @@ function moonphase() {
 		def phase(year, month, day)
 		  p = (julian(year, month, day) - julian(2000, 1, 6)) % 29.530588853
 
-		  if    p < 1.84566:  return "🌑"  # new
-		  elsif p < 5.53699:  return "🌒"  # waxing crescent
-		  elsif p < 9.22831:  return "🌓"  # first quarter
-		  elsif p < 12.91963: return "🌔"  # waxing gibbous
-		  elsif p < 16.61096: return "🌕"  # full
-		  elsif p < 20.30228: return "🌖"  # waning gibbous
-		  elsif p < 23.99361: return "🌗"  # last quarter
-		  elsif p < 27.68493: return "🌘"  # waning crescent
+		  if    p < 1.84566 then  return "🌑"  # new
+		  elsif p < 5.53699 then  return "🌒"  # waxing crescent
+		  elsif p < 9.22831 then  return "🌓"  # first quarter
+		  elsif p < 12.91963 then return "🌔"  # waxing gibbous
+		  elsif p < 16.61096 then return "🌕"  # full
+		  elsif p < 20.30228 then return "🌖"  # waning gibbous
+		  elsif p < 23.99361 then return "🌗"  # last quarter
+		  elsif p < 27.68493 then return "🌘"  # waning crescent
 		  else                return "🌑"  # new
 		  end
 		end
@@ -94,7 +94,7 @@ function moonphase() {
 		# Get today's phase.
 		today = Time.new
 		print "#{phase(today.year, today.month, today.day)}"
-	EORUBY
+EORUBY
 }
 
 # iTerm Tab and Title Customization and prompt customization

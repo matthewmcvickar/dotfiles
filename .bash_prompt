@@ -66,34 +66,34 @@ function usernamehost() {
 # Adapted from: http://wan.pengganas.net/entry/calculating-phase-of-moon-in-ruby
 function moonphase() {
 /usr/bin/env ruby <<-EORUBY
-		# Convert a date to Julian.
-		def julian(year, month, day)
-		  a = (14-month)/12
-		  y = year+4800-a
-		  m = (12*a)-3+month
+	# Convert a date to Julian.
+	def julian(year, month, day)
+	  a = (14-month)/12
+	  y = year+4800-a
+	  m = (12*a)-3+month
 
-		  return day + (153*m+2)/5 + (365*y) + y/4 - y/100 + y/400 - 32045
-		end
+	  return day + (153*m+2)/5 + (365*y) + y/4 - y/100 + y/400 - 32045
+	end
 
-		# Define the phases of the moon.
-		def phase(year, month, day)
-		  p = (julian(year, month, day) - julian(2000, 1, 6)) % 29.530588853
+	# Define the phases of the moon.
+	def phase(year, month, day)
+	  p = (julian(year, month, day) - julian(2000, 1, 6)) % 29.530588853
 
-		  if    p < 1.84566 then  return "🌑"  # new
-		  elsif p < 5.53699 then  return "🌒"  # waxing crescent
-		  elsif p < 9.22831 then  return "🌓"  # first quarter
-		  elsif p < 12.91963 then return "🌔"  # waxing gibbous
-		  elsif p < 16.61096 then return "🌕"  # full
-		  elsif p < 20.30228 then return "🌖"  # waning gibbous
-		  elsif p < 23.99361 then return "🌗"  # last quarter
-		  elsif p < 27.68493 then return "🌘"  # waning crescent
-		  else                    return "🌑"  # new
-		  end
-		end
+	  if    p < 1.84566 then  return "🌑"  # new
+	  elsif p < 5.53699 then  return "🌒"  # waxing crescent
+	  elsif p < 9.22831 then  return "🌓"  # first quarter
+	  elsif p < 12.91963 then return "🌔"  # waxing gibbous
+	  elsif p < 16.61096 then return "🌕"  # full
+	  elsif p < 20.30228 then return "🌖"  # waning gibbous
+	  elsif p < 23.99361 then return "🌗"  # last quarter
+	  elsif p < 27.68493 then return "🌘"  # waning crescent
+	  else                    return "🌑"  # new
+	  end
+	end
 
-		# Get today's phase.
-		today = Time.new
-		print "#{phase(today.year, today.month, today.day)}"
+	# Get today's phase.
+	today = Time.new
+	print "#{phase(today.year, today.month, today.day)}"
 EORUBY
 }
 

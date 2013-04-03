@@ -87,7 +87,7 @@ function moonphase() {
 		  elsif p < 20.30228 then return "🌖"  # waning gibbous
 		  elsif p < 23.99361 then return "🌗"  # last quarter
 		  elsif p < 27.68493 then return "🌘"  # waning crescent
-		  else                return "🌑"  # new
+		  else                    return "🌑"  # new
 		  end
 		end
 

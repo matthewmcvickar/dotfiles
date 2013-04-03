@@ -48,8 +48,12 @@ function parse_git_dirty() {
 	git diff --quiet --ignore-submodules HEAD 2>/dev/null; [ $? -eq 1 ] && echo '❗'
 }
 
+function parse_git_untracked() {
+	echo -n '❔ ' && git status --porcelain 2>/dev/null | grep "^??" | wc -l | awk '{ print $1 }'
+}
+
 function parse_git_branch() {
-	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
+	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty) ${WHITE}$(parse_git_untracked)/"
 }
 
 # Only show username/host if not default.

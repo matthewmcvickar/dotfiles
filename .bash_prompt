@@ -49,7 +49,8 @@ function parse_git_dirty() {
 }
 
 function parse_git_untracked() {
-	echo -n '❔ ' && git status --porcelain 2>/dev/null | grep "^??" | wc -l | awk '{ print $1 }'
+	untracked_files = `git status --porcelain 2>/dev/null | grep "^??" | wc -l`
+	if [ $untracked_files != '0' ]; then echo -n '❔ ' && git status --porcelain 2>/dev/null | grep "^??" | wc -l | awk '{ print $1 }'
 }
 
 function parse_git_branch() {

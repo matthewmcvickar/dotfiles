@@ -10,7 +10,10 @@ alias -- -="cd -"
 alias db="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
+
 alias p="cd ~/Projects"
+alias oc="cd ~/Sites/ocupop"
+
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -18,6 +21,7 @@ alias e="emacs ."
 alias s="subl ."
 alias o="open"
 alias oo="open ."
+
 alias sshconf="s ~/.ssh/config"
 
 # Detect which `ls` flavor is in use

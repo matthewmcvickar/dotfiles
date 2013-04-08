@@ -42,7 +42,7 @@ which grunt > /dev/null && eval "$(grunt --completion=bash)"
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
 # Initialize Z (https://github.com/rupa/z)
-. ~/code/z/z.sh
+. `brew --prefix`/etc/profile.d/z.sh
 
 # Initialize rbenv (https://github.com/sstephenson/rbenv/)
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

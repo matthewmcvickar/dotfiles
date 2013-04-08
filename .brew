@@ -28,5 +28,8 @@ brew install ack
 brew install git
 brew install imagemagick
 
+# Install SSH tools
+brew install ssh-copy-id
+
 # Remove outdated versions from the cellar
 brew cleanup

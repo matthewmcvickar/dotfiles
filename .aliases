@@ -12,7 +12,7 @@ alias -- -="cd -"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
-alias si="cd /Applications/MAMP/htdocs/ocupop"
+alias si="cd /Applications/MAMP/htdocs/"
 alias mm="cd /Applications/MAMP/htdocs/matthewmcvickar"
 alias oc="cd /Applications/MAMP/htdocs/ocupop"
 

@@ -1,6 +1,6 @@
 # Matthew McVickar's dotfiles
 
-[Forked from Mathias Bynens](https://github.com/mathiasbynens/dotfiles/), whose readme explains what's happening here. This is set up how *I* like it, so I'd recommend forking Mathias' version and going from there; I've deleted and changed quite a bit.
+[Forked from Mathias Bynens](https://github.com/mathiasbynens/dotfiles/), whose readme explains what's happening here. This is set up how **I** like it, so I'd recommend forking Mathias' version and going from there; I've deleted and changed quite a bit.
 
 ## Instructions
 

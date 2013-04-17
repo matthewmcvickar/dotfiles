@@ -20,3 +20,8 @@ function phpserver() {
 	sleep 1 && open "http://${ip}:${port}/" &
 	php -S "${ip}:${port}"
 }
+
+# cd into whatever is the forefront Finder window.
+cdf() {
+  cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
+}

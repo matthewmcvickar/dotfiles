@@ -22,6 +22,7 @@ function phpserver() {
 }
 
 # cd into whatever is the forefront Finder window.
+# By sindresorhus, https://github.com/paulirish/dotfiles/commit/e67d1bc03
 cdf() {
   cd "`osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)'`"
 }

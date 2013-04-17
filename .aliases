@@ -27,7 +27,7 @@ alias oo="open ."
 
 ## Configuration
 alias reload="source ~/.bash_profile"
-alias dots="bash ~/Projects/dotfiles/build_dotfiles.sh"
+alias dots="bash ~/Projects/dotfiles/build_dotfiles.sh --force"
 alias sshconf="s ~/.ssh/config"
 
 # Detect which `ls` flavor is in use

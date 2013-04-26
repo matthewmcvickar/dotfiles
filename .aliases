@@ -28,7 +28,7 @@ alias oo="open ."
 ## Configuration
 alias reload="source ~/.bash_profile"
 alias dots="bash ~/Projects/dotfiles/build_dotfiles.sh --force"
-alias sshconf="s ~/.ssh/config"
+alias sshconfig="s ~/.ssh/config"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

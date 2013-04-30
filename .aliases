@@ -11,7 +11,6 @@ alias -- -="cd -"
 ## Folders
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
 alias si="cd /Applications/MAMP/htdocs/"
 alias mm="cd /Applications/MAMP/htdocs/matthewmcvickar"
 alias oc="cd /Applications/MAMP/htdocs/ocupop"
@@ -27,7 +26,7 @@ alias oo="open ."
 
 ## Configuration
 alias reload="source ~/.bash_profile"
-alias dots="bash ~/Projects/dotfiles/build_dotfiles.sh --force"
+alias dots="bash ~/localhost/matthewmcvickar/dotfiles/build_dotfiles.sh --force"
 alias sshconfig="s ~/.ssh/config"
 
 # Detect which `ls` flavor is in use

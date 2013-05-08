@@ -9,11 +9,11 @@ alias -- -="cd -"
 # Shortcuts
 
 ## Folders
-alias dl="cd ~/Downloads"
-alias dt="cd ~/Desktop"
-alias si="cd /Applications/MAMP/htdocs/"
-alias mm="cd /Applications/MAMP/htdocs/matthewmcvickar"
-alias oc="cd /Applications/MAMP/htdocs/ocupop"
+alias dl="cd ~/Downloads/"
+alias dt="cd ~/Desktop/"
+alias si="cd ~/Sites/"
+alias mm="cd ~/Sites/matthewmcvickar/"
+alias oc="cd ~/Sites/ocupop/"
 
 ## Commands
 alias g="git"

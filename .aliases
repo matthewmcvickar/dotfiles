@@ -23,6 +23,8 @@ alias e="emacs ."
 alias s="subl ."
 alias o="open"
 alias oo="open ."
+alias stage="sh build/deploy_to_staging.sh"
+alias deploy="sh build/deploy_to_production.sh"
 
 ## Configuration
 alias reload="source ~/.bash_profile"

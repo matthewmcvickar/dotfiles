@@ -30,6 +30,8 @@ alias deploy="sh build/deploy_to_production.sh"
 alias reload="source ~/.bash_profile"
 alias dots="bash ~/Sites/matthewmcvickar/dotfiles/build_dotfiles.sh --force"
 alias sshconfig="s ~/.ssh/config"
+alias httpdconfig="sudo subl /etc/apache2/httpd.conf"
+alias vhosts="sudo subl /etc/apache2/extra/httpd-vhosts.conf"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

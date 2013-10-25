@@ -12,6 +12,8 @@
 	# Push master to origin
 	po = push origin master
 	# Push master to heroku
+	pghp = push origin gh-pages
+	# Push master to heroku
 	ph = push heroku master
 	# Pull in remote changes for the current repository and all its submodules
 	u = !"git pull; git submodule foreach git pull origin master"

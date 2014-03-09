@@ -88,3 +88,7 @@
 
 [push]
 	default = simple
+
+[user]
+  name = Matthew McVickar
+  email = matthew@matthewmcvickar.com

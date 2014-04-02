@@ -7,7 +7,7 @@
 Grab this set of dotfiles and run it for the first time.
 
 ```bash
-git clone https://github.com/matthewmcvickar/dotfiles.git && cd dotfiles && ./bootstrap.sh
+git clone https://github.com/matthewmcvickar/dotfiles.git && cd dotfiles && ./build_dotfiles.sh
 ```
 
 When updating dotfiles thereafter, run:

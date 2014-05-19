@@ -35,6 +35,7 @@ brew install jpegoptim
 brew install ack
 brew install git
 brew install imagemagick
+brew install ffmpeg
 
 # Install SSH tools
 brew install ssh-copy-id

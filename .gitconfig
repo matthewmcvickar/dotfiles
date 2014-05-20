@@ -11,8 +11,8 @@
 	p = push
 	# Push master to origin
 	po = push origin master
-	# Push master to heroku
-	pghp = checkout -B gh-pages; git rebase master; git push origin gh-pages; git checkout master
+	# Rebase gh-pages from master and push to origin
+	pghp = !git checkout -B gh-pages && git rebase master && git push origin gh-pages && git checkout master
 	# Push master to heroku
 	ph = push heroku master
 	# Pull in remote changes for the current repository and all its submodules

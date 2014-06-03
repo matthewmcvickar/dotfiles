@@ -25,5 +25,5 @@ shopt -s cdspell
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Node.js
-export NODE_PATH="/usr/local/lib/node"
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 export PATH="/usr/local/share/npm/bin:$PATH"

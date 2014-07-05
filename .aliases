@@ -1,20 +1,17 @@
-# Easier navigation: .., ..., ...., ....., ~ and -
+# Easier navigation: .., ..., ...., .....
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
 
 # Shortcuts
 
 ## Folders
 alias dl="cd ~/Downloads/"
 alias dt="cd ~/Desktop/"
-alias si="cd /Applications/MAMP/htdocs/"
-alias mm="cd /Applications/MAMP/htdocs/matthewmcvickar/"
-alias oc="cd /Applications/MAMP/htdocs/ocupop/"
-alias work="cd /Applications/MAMP/htdocs/work/"
+alias si="cd ~/Sites/"
+alias mm="cd ~/Sites/matthewmcvickar/"
+alias work="cd ~/Sites/work/"
 
 ## Commands
 alias g="git"
@@ -29,7 +26,7 @@ alias deploy="sh build/deploy_to_production.sh"
 
 ## Configuration
 alias reload="source ~/.bash_profile"
-alias dots="bash /Applications/MAMP/htdocs/matthewmcvickar/dotfiles/build_dotfiles.sh --force"
+alias dots="bash ~/Sites/matthewmcvickar/dotfiles/build_dotfiles.sh --force"
 alias sshconfig="s ~/.ssh/config"
 alias httpdconfig="sudo subl /etc/apache2/httpd.conf"
 alias vhosts="sudo subl /etc/apache2/extra/httpd-vhosts.conf"
@@ -37,9 +34,9 @@ alias hosts="sudo subl /etc/hosts"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
-	colorflag="--color"
+  colorflag="--color"
 else # OS X `ls`
-	colorflag="-G"
+  colorflag="-G"
 fi
 
 # List all files colorized in long format

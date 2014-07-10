@@ -1,6 +1,6 @@
 # Matthew McVickar's Dotfiles
 
-[Forked from Mathias Bynens](https://github.com/mathiasbynens/dotfiles/), whose README explains what's happening here. This is set up just how I like it, so I'd recommend forking Mathias' version and going from there; I've deleted and changed quite a bit.
+[Forked from Mathias Bynens’ set](https://github.com/mathiasbynens/dotfiles/).
 
 
 ## Instructions
@@ -17,7 +17,7 @@ When updating dotfiles thereafter, run:
 $ dots
 ```
 
-(This is an alias of `bash ~/Sites/matthewmcvickar/dotfiles/build_dotfiles.sh --force`.)
+(This is an alias of `bash ~/Sites/matthewmcvickar/dotfiles/build_dotfiles.sh --force`, defined in [`~/.aliases`](.aliases).)
 
 
 ## Dotfiles

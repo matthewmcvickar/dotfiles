@@ -1,0 +1,62 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'libsass' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'libsass', null ]
+5 verbose cache add name=undefined spec="libsass" args=["libsass",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'libsass',
+6 verbose parsed url   path: 'libsass',
+6 verbose parsed url   href: 'libsass' }
+7 silly lockFile bb93a93c-libsass libsass
+8 verbose lock libsass /Users/matthewmcvickar/.npm/bb93a93c-libsass.lock
+9 silly lockFile bb93a93c-libsass libsass
+10 silly lockFile bb93a93c-libsass libsass
+11 verbose addNamed [ 'libsass', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile f34f7d57-libsass libsass@
+14 verbose lock libsass@ /Users/matthewmcvickar/.npm/f34f7d57-libsass.lock
+15 silly addNameRange { name: 'libsass', range: '*', hasData: false }
+16 verbose url raw libsass
+17 verbose url resolving [ 'https://registry.npmjs.org/', './libsass' ]
+18 verbose url resolved https://registry.npmjs.org/libsass
+19 info trying registry request attempt 1 at 11:13:33
+20 http GET https://registry.npmjs.org/libsass
+21 http 404 https://registry.npmjs.org/libsass
+22 silly registry.get cb [ 404,
+22 silly registry.get   { date: 'Thu, 10 Jul 2014 18:13:33 GMT',
+22 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'cache-control': 'max-age=0',
+22 silly registry.get     'content-length': '52',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     'x-served-by': 'cache-sjc3132-SJC',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1405016013.201238,VS0,VE85',
+22 silly registry.get     'keep-alive': 'timeout=10, max=50',
+22 silly registry.get     connection: 'Keep-Alive' } ]
+23 silly lockFile f34f7d57-libsass libsass@
+24 silly lockFile f34f7d57-libsass libsass@
+25 error 404 'libsass' is not in the npm registry.
+25 error 404 You should bug the author to publish it
+25 error 404
+25 error 404 Note that you can also install from a
+25 error 404 tarball, folder, or http url, or git url.
+26 error System Darwin 13.3.0
+27 error command "node" "/usr/local/bin/npm" "install" "-g" "libsass"
+28 error cwd /Users/matthewmcvickar/Sites/matthewmcvickar/dotfiles
+29 error node -v v0.10.26
+30 error npm -v 1.4.3
+31 error code E404
+32 verbose exit [ 1, true ]

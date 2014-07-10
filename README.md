@@ -8,7 +8,7 @@
 Grab this set of dotfiles and run it for the first time.
 
   ```sh
-  git clone https://github.com/matthewmcvickar/dotfiles.git && cd dotfiles && ./build_dotfiles.sh --force
+  $ git clone https://github.com/matthewmcvickar/dotfiles.git && cd dotfiles && ./build_dotfiles.sh --force
   ```
 
 When updating dotfiles thereafter, run:

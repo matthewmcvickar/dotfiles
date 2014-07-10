@@ -5,6 +5,8 @@
 
 ## Instructions
 
+**NOTE:** While the initial dotfiles setup here can be run on its own, it is automatically included in my **[Setup script](https://github.com/matthewmcvickar/setup)**.
+
 Grab this set of dotfiles and run it for the first time.
 
 ```sh

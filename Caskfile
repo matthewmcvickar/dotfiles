@@ -2,7 +2,6 @@
 # Usage: `brew bundle Caskfile`
 
 install caskroom/cask/brew-cask
-tap caskroom/versions
 
 ## Necessities
 cask install alfred
@@ -14,11 +13,13 @@ cask install textexpander
 
 ## Development
 cask install google-chrome
-cask install imagealpha
-cask install imageoptim
 cask install iterm2
 cask install sequel-pro
 cask install sublime-text
+
+## More Development
+# cask install imagealpha
+# cask install imageoptim
 
 ## Utilities
 # cask install flux

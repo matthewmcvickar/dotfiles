@@ -20,4 +20,4 @@ export LESS_TERMCAP_md="$ORANGE"
 export MANPAGER="less -X"
 
 # Install Homebrew Cask applications in /Applications, not ~/Applications.
-export HOMEBREW_CASK_OPTS="--appdir=/Applications
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"

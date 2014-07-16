@@ -12,6 +12,7 @@ alias dt="cd ~/Desktop/"
 alias si="cd ~/Sites/"
 alias mm="cd ~/Sites/matthewmcvickar/"
 alias os="cd ~/Sites/opensource/"
+alias sb="cd ~/Sites/sandbox/"
 alias work="cd ~/Sites/work/"
 
 ## Commands

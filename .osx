@@ -223,7 +223,7 @@ defaults write com.apple.dock hide-mirror -bool true
 # Wipe all (default) app icons from the Dock
 # This is only really useful when setting up a new Mac, or if you don't use
 # the Dock to launch apps.
-defaults write com.apple.dock persistent-apps -array ""
+# defaults write com.apple.dock persistent-apps -array ""
 
 
 ## iTunes
@@ -294,9 +294,7 @@ defaults write com.apple.DiskUtility advanced-image-options -bool true
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
 
 
-##
-
-## Kill affected applications                                                  #
+## Kill affected applications.
 
 for app in "Activity Monitor" "Contacts" "cfprefsd" "Dock" "Finder" "iTunes" "Mail" "Messages" "SystemUIServer"; do
 	killall "$app" > /dev/null 2>&1

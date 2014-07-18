@@ -34,6 +34,9 @@ alias httpdconfig="sudo subl /etc/apache2/httpd.conf"
 alias vhosts="sudo subl /etc/apache2/extra/httpd-vhosts.conf"
 alias hosts="sudo subl /etc/hosts"
 
+## Miscellaneous
+alias focus="sudo sh ~/Sites/matthewmcvickar/heyfocus/heyfocus.sh"
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
   colorflag="--color"

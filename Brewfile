@@ -19,6 +19,7 @@ install rbenv ruby-build
 # Install everything else
 install ack
 install git
+install bash-completion
 install imagemagick --with-webp
 install ssh-copy-id
 install wget --enable-iri

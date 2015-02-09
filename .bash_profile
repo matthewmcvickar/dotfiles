@@ -33,3 +33,8 @@ export PATH="/usr/local/share/npm/bin:$PATH"
 
 # Z
 . `brew --prefix`/etc/profile.d/z.sh
+
+# Autocompletion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi

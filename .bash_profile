@@ -22,7 +22,7 @@ shopt -s cdspell
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
 # Initialize rbenv (https://github.com/sstephenson/rbenv/)
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+eval "$(rbenv init -)"
 
 # Node.js
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules

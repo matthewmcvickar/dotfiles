@@ -21,12 +21,13 @@ shopt -s cdspell
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
-# Initialize rbenv (https://github.com/sstephenson/rbenv/)
-eval "$(rbenv init -)"
-
 # Node.js
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 export PATH="/usr/local/share/npm/bin:$PATH"
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 # Z
 . `brew --prefix`/etc/profile.d/z.sh

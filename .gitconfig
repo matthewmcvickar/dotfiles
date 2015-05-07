@@ -56,6 +56,10 @@
 	remote = origin
 	merge = refs/heads/master
 
+# Allow `git push` without specifying origin and branch.
+[remote "origin"]
+	push = HEAD
+
 # URL shorthands
 [url "git@github.com:"]
 	insteadOf = "gh:"

@@ -4,9 +4,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# Shortcuts
-
-## Folders
+# Folders
 alias dl="cd ~/Downloads/"
 alias dt="cd ~/Desktop/"
 alias si="cd ~/Sites/"
@@ -15,10 +13,9 @@ alias os="cd ~/Sites/opensource/"
 alias sb="cd ~/Sites/sandbox/"
 alias work="cd ~/Sites/work/"
 
-## Commands
+# Commands
 alias g="git"
-alias h="history"
-alias j="jobs"
+alias a="atom ."
 alias e="emacs ."
 alias s="subl ."
 alias o="open"
@@ -26,16 +23,13 @@ alias oo="open ."
 alias stage="sh build/deploy_to_staging.sh"
 alias deploy="sh build/deploy_to_production.sh"
 
-## Configuration
+# Configuration
 alias reload="source ~/.bash_profile"
 alias dots="bash ~/Sites/matthewmcvickar/dotfiles/build_dotfiles.sh --force"
 alias sshconfig="s ~/.ssh/config"
 alias httpdconfig="sudo subl /etc/apache2/httpd.conf"
 alias vhosts="sudo subl /etc/apache2/extra/httpd-vhosts.conf"
 alias hosts="sudo subl /etc/hosts"
-
-## Miscellaneous
-alias focus="sudo sh ~/Sites/matthewmcvickar/heyfocus/heyfocus.sh"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`

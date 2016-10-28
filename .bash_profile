@@ -25,6 +25,9 @@ shopt -s cdspell
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 export PATH="/usr/local/share/npm/bin:$PATH"
 
+# Yarn
+export PATH="$PATH:$HOME/.yarn/bin"
+
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"

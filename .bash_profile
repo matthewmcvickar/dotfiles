@@ -32,6 +32,9 @@ export PATH="$PATH:$HOME/.yarn/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# Vagrant
+export PATH="$PATH:/sbin"
+
 # Z
 . `brew --prefix`/etc/profile.d/z.sh
 

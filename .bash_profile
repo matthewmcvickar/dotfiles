@@ -32,6 +32,9 @@ export PATH="$PATH:$HOME/.yarn/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# Docker, Dinghy
+eval $(dinghy env)
+
 # Vagrant
 export PATH="$PATH:/sbin"
 

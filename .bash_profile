@@ -32,11 +32,14 @@ export PATH="$PATH:$HOME/.yarn/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# Docker, Dinghy
+# Dinghy, a proxy for Docker.
 eval $(dinghy env)
 
 # Vagrant
 export PATH="$PATH:/sbin"
+
+# Composer
+export PATH="$PATH:$HOME/.composer/vendor/bin/"
 
 # Z
 . `brew --prefix`/etc/profile.d/z.sh

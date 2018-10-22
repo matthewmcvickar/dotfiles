@@ -67,4 +67,4 @@ alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 # Starty a PHP server in the local directory.
-alias pserv="php -S localhost:9000 -t ./"
+alias pserv="sleep 1 && open "http://localhost:9000/" & php -S localhost:9000 -t ./"

@@ -18,18 +18,15 @@ alias g="git"
 alias a="atom ."
 alias e="emacs ."
 alias s="subl ."
-alias o="open"
-alias oo="open ."
-alias stage="sh build/deploy_to_staging.sh"
-alias deploy="sh build/deploy_to_production.sh"
+alias c="code ."
 
 # Configuration
 alias reload="source ~/.bash_profile"
 alias dots="bash ~/Sites/matthewmcvickar/dotfiles/build_dotfiles.sh --force"
 alias sshconfig="s ~/.ssh/config"
-alias httpdconfig="sudo subl /etc/apache2/httpd.conf"
-alias vhosts="sudo subl /etc/apache2/extra/httpd-vhosts.conf"
-alias hosts="sudo subl /etc/hosts"
+alias httpdconfig="sudo code /etc/apache2/httpd.conf"
+alias vhosts="sudo code /etc/apache2/extra/httpd-vhosts.conf"
+alias hosts="sudo code /etc/hosts"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -51,20 +48,11 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 # Enable aliases to be sudo'ed
 alias sudo='sudo '
 
-# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update'
-
-# IP address
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-
-# Enhanced WHOIS lookups
-alias whois="whois -h whois-servers.net"
+# Update Homebrew and NPM packages.
+alias gupdate='brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g;'
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
-
-# Clean up LaunchServices to remove duplicates in the “Open With” menu
-alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 # Starty a PHP server in the local directory.
 alias pserv="sleep 1 && open "http://localhost:9000/" & php -S localhost:9000 -t ./"

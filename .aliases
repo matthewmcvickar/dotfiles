@@ -23,7 +23,8 @@ alias c="code ."
 # Configuration
 alias reload="source ~/.bash_profile"
 alias dots="bash ~/Sites/matthewmcvickar/dotfiles/build_dotfiles.sh --force"
-alias sshconfig="s ~/.ssh/config"
+alias dotsconfig="c ~/Sites/matthewmcvickar/dotfiles/"
+alias sshconfig="c ~/.ssh/config"
 alias httpdconfig="sudo code /etc/apache2/httpd.conf"
 alias vhosts="sudo code /etc/apache2/extra/httpd-vhosts.conf"
 alias hosts="sudo code /etc/hosts"
@@ -54,5 +55,5 @@ alias gupdate='brew update; brew upgrade; brew cleanup; npm update npm -g; npm u
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
-# Starty a PHP server in the local directory.
+# Start a PHP server in the local directory.
 alias pserv="sleep 1 && open "http://localhost:9000/" & php -S localhost:9000 -t ./"

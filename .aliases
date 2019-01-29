@@ -53,7 +53,7 @@ alias sudo='sudo '
 alias gupdate='brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g;'
 
 # Flush Directory Service cache
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+alias flushdns="sudo killall -HUP mDNSResponder"
 
 # Start a PHP server in the local directory.
 alias pserv="sleep 1 && open "http://localhost:9000/" & php -S localhost:9000 -t ./"

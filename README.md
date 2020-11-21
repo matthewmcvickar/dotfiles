@@ -57,9 +57,8 @@ Set OS X defaults:
 $ bash ~/.osx
 ```
 
-Grab basics from Homebrew and native apps from Cask:
+Grab packages from Homebrew:
 
 ```sh
 $ brew bundle ~/Brewfile
-$ brew bundle ~/Caskfile
 ```

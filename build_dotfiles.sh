@@ -1,6 +1,6 @@
 #!/bin/bash
 cd "$(dirname "${BASH_SOURCE}")"
-git pull
+git pull --rebase
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "build_dotfiles.sh" --exclude "README.md" -av . ~
 }

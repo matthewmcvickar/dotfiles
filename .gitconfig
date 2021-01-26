@@ -10,7 +10,7 @@
 	# Push
 	p = push
 	# Pull in remote changes for the current repository and all its submodules
-	u = !"git pull; git submodule foreach git pull origin master"
+	u = !"git pull --rebase; git submodule foreach git pull origin master"
 	# Diff stats
 	ds = diff --shortstat
 	# Commit all changes

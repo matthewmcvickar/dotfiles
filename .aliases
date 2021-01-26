@@ -7,27 +7,22 @@ alias .....="cd ../../../.."
 # Folders
 alias dl="cd ~/Downloads/"
 alias dt="cd ~/Desktop/"
-alias si="cd ~/Sites/"
+alias sites="cd ~/Sites/"
 alias mm="cd ~/Sites/matthewmcvickar/"
 alias os="cd ~/Sites/opensource/"
-alias sb="cd ~/Sites/sandbox/"
 alias work="cd ~/Sites/work/"
 
 # Commands
 alias g="git"
 alias a="atom ."
 alias e="emacs ."
-alias s="subl ."
 alias c="code ."
 
 # Configuration
 alias reload="source ~/.bash_profile"
 alias dots="bash ~/Sites/matthewmcvickar/dotfiles/build_dotfiles.sh --force"
-alias dotsconfig="c ~/Sites/matthewmcvickar/dotfiles/"
 alias sshconfig="c ~/.ssh/config"
 alias httpdconfig="sudo code /etc/apache2/httpd.conf"
-alias vhosts="sudo code /etc/apache2/extra/httpd-vhosts.conf"
-alias hosts="sudo code /etc/hosts"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -38,9 +33,6 @@ fi
 
 # List all files colorized in long format
 alias l="ls -la ${colorflag}"
-
-# List only directories
-alias lsd='ls -l ${colorflag} | grep "^d"'
 
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"

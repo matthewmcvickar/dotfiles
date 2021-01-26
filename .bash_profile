@@ -21,9 +21,9 @@ shopt -s cdspell
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
-# Node.js
-export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
-export PATH="/usr/local/share/npm/bin:$PATH"
+# NVM
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Yarn
 export PATH="$PATH:$HOME/.yarn/bin"
@@ -31,9 +31,6 @@ export PATH="$PATH:$HOME/.yarn/bin"
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-
-# Vagrant
-export PATH="$PATH:/sbin"
 
 # Composer
 export PATH="$PATH:$HOME/.composer/vendor/bin/"

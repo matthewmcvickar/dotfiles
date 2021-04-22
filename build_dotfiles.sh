@@ -1,17 +1,33 @@
 #!/bin/bash
-cd "$(dirname "${BASH_SOURCE}")"
+
 git pull --rebase
-function doIt() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "build_dotfiles.sh" --exclude "README.md" -av . ~
-}
-if [ "$1" == "--force" -o "$1" == "-f" ]; then
-	doIt
-else
-	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
-	echo
-	if [[ $REPLY =~ ^[Yy]$ ]]; then
-		doIt
-	fi
+
+read -r -p "Ready to symlink your ~/.dotfiles/homedir/* files in ~/? [y|N] " response
+
+if [[ $response =~ (y|yes|Y) ]]; then
+  echo "Creating symlinks for dotfiles..."
+  pushd ~/.dotfiles/homedir/ > /dev/null 2>&1
+  now=$(date +"%Y.%m.%d.%H.%M.%S")
+
+  for file in .*; do
+    if [[ $file == "." || $file == ".." ]]; then
+      continue
+    fi
+    running "~/$file"
+    # if the file exists:
+    if [[ -e ~/$file ]]; then
+        mkdir -p ~/.dotfiles_backup/$now
+        mv ~/$file ~/.dotfiles_backup/$now/$file
+        echo "Backup saved as ~/.dotfiles_backup/$now/$file"
+    fi
+    # symlink might still exist
+    unlink ~/$file > /dev/null 2>&1
+    # create the link
+    ln -s ~/.dotfiles/homedir/$file ~/$file
+    echo -en '\tlinked';ok
+  done
+
+  popd > /dev/null 2>&1
 fi
-unset doIt
-source ~/.bash_profile
+
+source ~/.zshrc

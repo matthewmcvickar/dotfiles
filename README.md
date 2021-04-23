@@ -19,7 +19,7 @@ and other projects.
 4. Clone this repo into the home directory.
 
     ```sh
-    git clone https://github.com/matthewmcvickar/dotfiles.git .dotfiles
+    git clone https://github.com/matthewmcvickar/dotfiles.git ~/.dotfiles
     ```
 
 5. Run the `install.sh` script to symlink dotfiles from the home directory

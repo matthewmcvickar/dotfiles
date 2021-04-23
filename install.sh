@@ -3,7 +3,7 @@
 # Adapted from:
 # https://github.com/atomantic/dotfiles/blob/master/install.sh
 
-git pull --rebase
+git pull origin main --rebase
 
 read -r -p "Ready to symlink your ~/.dotfiles/homedir/* files in ~/? [y|N] " response
 

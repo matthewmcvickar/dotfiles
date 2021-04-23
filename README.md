@@ -26,14 +26,32 @@ and other projects.
    to the `~/.dotfiles/homedir/*` files.
 
     ```sh
+    cd ~/.dotfiles/
     ./install.sh
     ```
+
+    Some errors from oh-my-zsh might show up here. Ignore them.
 
 6. Install some other things:
 
     ```sh
     npm install npm-check-updates -g
     ```
+
+7. Grab packages from Homebrew:
+
+    ```sh
+    brew bundle ~/Brewfile
+    ```
+
+8. Set macOS settings.
+
+    ```sh
+    ./.macos
+    ```
+
+9. Restart computer.
+
 
 ## What's in Here
 
@@ -55,22 +73,6 @@ Aliases and exports are in the `./homedir/,zshrc` file.
 - `.gitattributes`
 - `.gitconfig`
 - `.gitignore`
-
-### Manual-run Configurations
-
-When setting up a new OS X computer.
-
-Set OS X defaults:
-
-```sh
-./.macos
-```
-
-Grab packages from Homebrew:
-
-```sh
-brew bundle ~/Brewfile
-```
 
 ---
 

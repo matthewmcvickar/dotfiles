@@ -7,14 +7,10 @@ update
 # Upgrade any already-installed formulae
 upgrade
 
-# Install Z for jumping around
+# Install formulae
 install z
-
-# Install NodeJS
 install node
-
-# Install everything else
-install wget --enable-iri
+install yarn
 
 # Remove outdated versions from the cellar
 cleanup

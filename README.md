@@ -32,16 +32,16 @@ and other projects.
 
     Some errors from oh-my-zsh might show up here. Ignore them.
 
-6. Install some other things:
+6. Install some Node packages:
 
     ```sh
     npm install npm-check-updates -g
     ```
 
-7. Grab packages from Homebrew:
+7. Install packages from Homebrew:
 
     ```sh
-    brew bundle ~/Brewfile
+    brew install node yarn z
     ```
 
 8. Set macOS settings.

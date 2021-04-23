@@ -265,7 +265,7 @@ divvy://import/YnBsaXN0MDDUAQIDBAUGvL1YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b
 #### App Shortcuts
 
 - iTunes
-    - **⌃⌥⌘S**: Sync “iPhone”
+    - **⌃⌥⌘S**: Sync 'iPhone'
     - **⌃C**: Correct Capitalization
 
 - Preview

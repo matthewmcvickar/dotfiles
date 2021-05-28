@@ -9,8 +9,6 @@
   s = status
   # Push
   p = push
-  # Pull in remote changes for the current repository and all its submodules
-  u = !"git pull --rebase; git submodule foreach git pull origin master"
   # Diff stats
   ds = diff --shortstat
   # Commit all changes
@@ -27,8 +25,17 @@
 [core]
   # Set editor
   editor = code
-  # Use custom `.gitignore` and `.gitattributes`
-  excludesfile = ~/.gitignore
-  attributesfile = ~/.gitattributes
   # Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
   whitespace = space-before-tab,trailing-space
+
+[pull]
+  # Rebase instead of merge when pulling
+  rebase = true
+
+[fetch]
+  # Automatically clean Git objects in your repository locally whenever you fetch changes from remote
+  prune = true
+
+[diff]
+  # Make diff easier to read
+  colorMoved = zebra

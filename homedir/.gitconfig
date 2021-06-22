@@ -36,6 +36,10 @@
   # Automatically clean Git objects in your repository locally whenever you fetch changes from remote
   prune = true
 
+[push]
+  # Push the current branch by default
+  default = current
+
 [diff]
   # Make diff easier to read
   colorMoved = zebra

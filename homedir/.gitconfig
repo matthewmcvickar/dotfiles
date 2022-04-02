@@ -43,3 +43,6 @@
 [diff]
   # Make diff easier to read
   colorMoved = zebra
+
+[init]
+  defaultBranch = main

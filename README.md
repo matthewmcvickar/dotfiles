@@ -52,11 +52,11 @@ and other projects.
 
 9. Restart computer.
 
-
 ## What's in Here
 
-### Automatic Configurations
+### Miscellaneous Configurations
 
+- `.finicky`: [Finicky](https://github.com/johnste/finicky/) configuration.
 - `.wgetrc`: wget configuration.
 
 ### Shell Environment Configurations

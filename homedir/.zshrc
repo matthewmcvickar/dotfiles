@@ -59,6 +59,7 @@ alias oss="cd ~/Sites/opensource/"
 alias work="cd ~/Sites/work/"
 
 # Commands
+alias l="ls -la"
 alias c="code ." # VS Code
 
 # Configuration

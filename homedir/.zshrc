@@ -34,6 +34,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # Composer
 path+=('~/.composer/vendor/bin/')
 
+# pyenv
+eval "$(pyenv init -)"
+
 # Finished adding to the PATH; now export.
 export PATH
 
@@ -68,3 +71,4 @@ alias sshconfig="c ~/.ssh/config"
 
 # Update Homebrew and NPM packages.
 alias gupdate='brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g;'
+eval "$(pyenv init -)"

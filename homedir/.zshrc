@@ -68,4 +68,3 @@ alias sshconfig="c ~/.ssh/config"
 
 # Update Homebrew and NPM packages.
 alias gupdate='brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g;'
-eval "$(pyenv init -)"

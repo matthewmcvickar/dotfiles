@@ -33,4 +33,4 @@ if [[ $response =~ (y|yes|Y) ]]; then
   popd > /dev/null 2>&1
 fi
 
-source ~/.zshrc
+exec zsh

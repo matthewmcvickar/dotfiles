@@ -38,14 +38,6 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH
 
 
-# ---- #
-# MISC #
-# ---- #
-
-# Install Homebrew Cask applications in /Applications, not ~/Applications.
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
-
 # ------- #
 # ALIASES #
 # ------- #
@@ -61,10 +53,6 @@ alias work="cd ~/Sites/work/"
 # Commands
 alias l="ls -la"
 alias c="code ." # VS Code
-
-# Configuration
-alias shreload="source ~/.zshrc"
-alias sshconfig="c ~/.ssh/config"
 
 # Update Homebrew and NPM packages.
 alias gupdate='brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g;'

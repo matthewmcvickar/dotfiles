@@ -7,6 +7,10 @@ module.exports = {
     {
       match: /^https?:\/\/meet\.google\.com\/.*$/,
       browser: "Google Chrome"
+    },
+    {
+      match: /^https?:\/\/sessions\.psychologytoday\.com\/.*$/,
+      browser: "Safari"
     }
   ]
 }

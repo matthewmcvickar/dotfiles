@@ -27,9 +27,11 @@ PROMPT="; "
 # PATH #
 # ---- #
 
+# Homebrew
+export PATH="/usr/local/sbin:$PATH"
+
 # NVM
 export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 
 # Composer
 export PATH="$HOME/.composer/vendor/bin:$PATH"

@@ -11,6 +11,10 @@ module.exports = {
     {
       match: /^https?:\/\/sessions\.psychologytoday\.com\/.*$/,
       browser: "Safari"
+    },
+    {
+      match: /^https?:\/\/www\.focusmate\.com\/.*$/,
+      browser: "Safari"
     }
   ]
 }

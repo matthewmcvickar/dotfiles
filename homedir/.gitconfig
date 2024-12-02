@@ -2,6 +2,18 @@
   name = Matthew McVickar
   email = matthew@matthewmcvickar.com
 
+[user]
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINhdgyyZldfBo/KUoiGeLEZKExHO26FSf5MOa33vShdI
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
+
 [alias]
   # View the SHA, description, and history graph of the latest 20 commits
   l = log
@@ -46,5 +58,6 @@
 
 [init]
   defaultBranch = main
+
 [url "git@github.com:"]
 	insteadOf = https://github.com/

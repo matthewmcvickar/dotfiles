@@ -61,3 +61,10 @@ alias c="code ." # VS Code
 
 # Update Homebrew and NPM packages.
 alias gupdate='brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g;'
+
+# bun completions
+[ -s "/Users/matthewmcvickar/.bun/_bun" ] && source "/Users/matthewmcvickar/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

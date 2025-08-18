@@ -10,6 +10,7 @@ plugins=(
   common-aliases
   z
   zsh-autosuggestions
+  zsh-nvm
 )
 
 # Load oh-my-zsh.

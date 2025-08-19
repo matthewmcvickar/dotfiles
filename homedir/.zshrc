@@ -61,9 +61,6 @@ alias work="cd ~/Sites/work/"
 alias l="ls -la"
 alias c="code ." # VS Code
 
-# Update Homebrew and NPM packages.
-alias gupdate='brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g;'
-
 # bun completions
 [ -s "/Users/matthewmcvickar/.bun/_bun" ] && source "/Users/matthewmcvickar/.bun/_bun"
 

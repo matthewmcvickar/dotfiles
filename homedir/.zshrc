@@ -44,26 +44,31 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Finished adding to the PATH; now export.
 export PATH
 
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# bun autocompletions
+[ -s "/Users/matthewmcvickar/.bun/_bun" ] && source "/Users/matthewmcvickar/.bun/_bun"
+[ -s "/Users/mattmcvickar/.bun/_bun" ] && source "/Users/mattmcvickar/.bun/_bun"
+
 
 # ------- #
 # ALIASES #
 # ------- #
 
+# Navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
 # Folders
-alias dls="cd ~/Downloads/"
+alias dl="cd ~/Downloads/"
 alias desk="cd ~/Desktop/"
 alias sites="cd ~/Sites/"
-alias mm="cd ~/Sites/matthewmcvickar/"
-alias oss="cd ~/Sites/opensource/"
 alias work="cd ~/Sites/work/"
 
 # Commands
 alias l="ls -la"
 alias c="code ." # VS Code
-
-# bun completions
-[ -s "/Users/matthewmcvickar/.bun/_bun" ] && source "/Users/matthewmcvickar/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"

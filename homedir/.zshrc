@@ -71,3 +71,10 @@ alias work="cd ~/Sites/work/"
 # Commands
 alias l="ls -la"
 alias c="code ." # VS Code
+
+
+# ---- #
+# WORK #
+# ---- #
+
+AWS_PROFILE=operations_prod

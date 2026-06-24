@@ -36,7 +36,7 @@ source $ZSH/oh-my-zsh.sh
 # ---- #
 
 # Homebrew
-export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"

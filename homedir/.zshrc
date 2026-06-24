@@ -51,14 +51,6 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Finished adding to the PATH; now export.
 export PATH
 
-# bun completions
-[ -s "/Users/matthewmcvickar/.bun/_bun" ] && source "/Users/matthewmcvickar/.bun/_bun"
-[ -s "/Users/mattmcvickar/.bun/_bun" ] && source "/Users/mattmcvickar/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
 
 # ------- #
 # ALIASES #

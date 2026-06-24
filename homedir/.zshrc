@@ -2,7 +2,7 @@
 # OH-MY-ZSH #
 # --------- #
 
-# Prompt theme adapted from Frontcube theme.
+# Prompt theme adapted from the 'Frontcube' oh-my-zsh theme.
 PROMPT='
 %{$fg_bold[blue]%}%~%{$fg_bold[blue]%}%{$fg_bold[blue]%} % %{$reset_color%}
 %{$fg_bold[green]%}›%{$reset_color%} '

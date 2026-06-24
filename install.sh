@@ -30,6 +30,8 @@ if [[ $response =~ (y|yes|Y) ]]; then
     printf '\n\tLinked!';
   done
 
+  printf '\n\nDone!\n'
+
   popd > /dev/null 2>&1
 fi
 

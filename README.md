@@ -1,5 +1,7 @@
 # Matthew McVickar's Dotfiles and Computer Setup
 
+⚠️ **See 'Macbook Setup Notes' in Obsidian for more updated notes!**
+
 Inspired and copied from [Mathias Bynens' dotfiles](https://github.com/mathiasbynens/dotfiles/)
 and other projects.
 
